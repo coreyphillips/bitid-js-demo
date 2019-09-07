@@ -6,7 +6,7 @@ Protocol: https://github.com/bitid/bitid
 
 JS Library: https://github.com/coreyphillips/bitid-js-demo
 
-Demo: http://bitid-js-demo.herokuapp.com/
+Demo: https://bitid.herokuapp.com/
 
 ## Author
 Aaron Caswell
