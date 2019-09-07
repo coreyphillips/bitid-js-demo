@@ -60,7 +60,7 @@ app.get('/login', function(req, res) {
   if(req.user) return res.redirect('/user');
 
   var nonce = db.nonces.find(function(nonce) {return nonce.sid === req.sessionID;}) || db.nonces.create(req.sessionID)
-    , bitid = new Bitid({nonce: nonce.id, callback: callbackURL, unsecure: true});
+    , bitid = new Bitid({nonce: nonce.id, callback: callbackURL});
 
   res.render('login', {
     nonce: nonce.id,
