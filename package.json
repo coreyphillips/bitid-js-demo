@@ -1,6 +1,6 @@
 {
   "name": "bitid-js-demo",
-  "description": "Demo of the BitID protocol JavaScript library: https://github.com/porkchop/bitid-js",
+  "description": "Demo of the BitID protocol JavaScript library: https://github.com/coreyphillips/bitid-js-demo",
   "version": "0.0.1",
   "author": {
     "name": "Aaron Caswell",
@@ -34,7 +34,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/porkchop/bitid-js-demo"
+    "url": "https://github.com/coreyphillips/bitid-js-demo"
   },
   "license": "MIT"
 }
