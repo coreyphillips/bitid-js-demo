@@ -4,7 +4,7 @@ Demo of the BitID protocol JavaScript library.
 
 Protocol: https://github.com/bitid/bitid
 
-JS Library: https://github.com/porkchop/bitid-js
+JS Library: https://github.com/coreyphillips/bitid-js-demo
 
 Demo: http://bitid-js-demo.herokuapp.com/
 
