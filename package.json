@@ -14,13 +14,13 @@
     "node": "0.10.x"
   },
   "dependencies": {
-    "bitid": "file:bitid-js",
-    "express": "~3.4.8",
-    "morgan": "~1.0.0",
+    "bitcoinjs-message": "^2.1.0",
     "body-parser": "~1.0.0",
     "debug": "~0.7.4",
     "ejs": "~0.8.5",
-    "express-partials": "0.2.0"
+    "express": "~3.4.8",
+    "express-partials": "0.2.0",
+    "morgan": "~1.0.0"
   },
   "keywords": [
     "bitcoin",
