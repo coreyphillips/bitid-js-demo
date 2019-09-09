@@ -14,6 +14,7 @@
     "node": "0.10.x"
   },
   "dependencies": {
+    "bitid": "file:bitid-js",
     "express": "~3.4.8",
     "morgan": "~1.0.0",
     "body-parser": "~1.0.0",
