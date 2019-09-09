@@ -57,7 +57,7 @@ function Bitid(params) {
  * Library version.
  */
 
-Bitid.version = require('../package').version;
+Bitid.version = require('./package').version;
 
 Bitid.prototype.uriValid = function() {
   var uri = this._uri;
