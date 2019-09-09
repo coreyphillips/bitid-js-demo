@@ -11,7 +11,7 @@
     "start": "node ./app.js"
   },
   "engines": {
-    "node": "0.10.x"
+    "node": ">=0.10.x"
   },
   "dependencies": {
     "bitcoinjs-message": "^2.1.0",
@@ -21,6 +21,10 @@
     "express": "~3.4.8",
     "express-partials": "0.2.0",
     "morgan": "~1.0.0"
+  },
+  "devDependencies": {
+    "mocha": "1.18.2",
+    "should": "3.3.1"
   },
   "keywords": [
     "bitcoin",
