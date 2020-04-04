@@ -14,7 +14,7 @@
     "node": ">=0.10.x"
   },
   "dependencies": {
-    "bitcoinjs-message": "^2.1.0",
+    "bitcoinjs-message": "https://github.com/coreyphillips/bitcoinjs-message",
     "body-parser": "~1.0.0",
     "debug": "~0.7.4",
     "ejs": "~0.8.5",
