@@ -14,6 +14,7 @@ var BtcMessage = require('bitcoinjs-message')
   , SCHEME = 'bitid:'
   , PARAM_NONCE = 'x'
   , PARAM_UNSECURE = 'u';
+var bitcoin = require("bitcoinjs-lib");
 
 
 /**
@@ -67,7 +68,19 @@ Bitid.prototype.uriValid = function() {
 
 Bitid.prototype.signatureValid = function() {
   try {
-    return BtcMessage.verify(this.uri, this.address, this.signature);
+    var network = "bitcoin";
+    try {
+      bitcoin.address.toOutputScript(this.address, bitcoin.networks.testnet);
+      network = "testnet";
+    } catch (e) {
+      network = "bitcoin"
+    }
+    var isValid = false;
+    var messagePrefix = bitcoin.networks[network].messagePrefix;
+    try { isValid = BtcMessage.verify(this.uri, this.address, this.signature, messagePrefix); } catch (e) {}
+    //This is a fix for https://github.com/bitcoinjs/bitcoinjs-message/issues/20
+    if (!isValid)  isValid = BtcMessage.verifyElectrum(this.uri, this.address, this.signature, messagePrefix);
+    return isValid;
   }
   catch(e) {
     return false;
